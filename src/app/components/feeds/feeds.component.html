@@ -1,0 +1,28 @@
+<h1>Upload Feeds</h1>
+
+<div>
+    <form>
+        <tr>
+            <td>
+                Picture:
+            </td>
+            <td>
+                <input type="file" accept="image/jpg" #picture>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Comments:
+            </td>
+            <td>
+                <textarea cols="40" rows="5" #comments></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="button" (click)="postFeeds(comments.value)">Post</button>
+            </td>
+        </tr>
+    </form>
+</div>
